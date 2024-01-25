@@ -15,8 +15,7 @@
     "@faker-js/faker": "^7.6.0",
     "@lacussoft/cpf-gen": "^1.2.1",
     "@wdio/appium-service": "^8.3.9",
-    "@wdio/browserstack-service": "^8.3.9",
-    "@wdio/cli": "^8.3.9",
+    "@wdio/browserstack-service": "^8.29.1",
     "@wdio/local-runner": "^8.3.9",
     "@wdio/mocha-framework": "^8.3.0",
     "@wdio/spec-reporter": "^8.3.0",
@@ -37,5 +36,8 @@
   "directories": {
     "test": "tests"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^8.29.1"
+  }
 }

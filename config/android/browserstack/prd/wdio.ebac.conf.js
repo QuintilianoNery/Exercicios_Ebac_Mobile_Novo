@@ -2,7 +2,7 @@ const { config } = require('../../../wdio.shared.conf')
 
 // Definitions for test execution
 const appUrl = 'bs://aa7081fa45e0042c57cc0aa94eee9d0888bdf086' 
-const releaseName = '7.3.1' // Example: version
+const releaseName = '123312' // Example: version
 const buildNumber = '123'
 
 // Settings of the device to be tested
