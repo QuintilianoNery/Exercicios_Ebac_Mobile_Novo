@@ -1,0 +1,6 @@
+node_modules
+apps
+package-lock.json
+local.log
+app/android/
+*.apk
