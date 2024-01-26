@@ -1,9 +1,9 @@
-[90m2024-01-25T21:30:19.098Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m Using app: bs://aa7081fa45e0042c57cc0aa94eee9d0888bdf086
-[90m2024-01-25T21:30:19.099Z[39m [33mWARN[39m [97m@wdio/browserstack-service[39m Skipping buildIdentifier as buildName is not passed.
-[90m2024-01-25T21:30:19.100Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending launch start event
-[90m2024-01-25T21:30:20.921Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m [Start_Build] Success response: {"build_hashed_id":"3ggy5dvd2bfyevcqmfqmhpotnwxg3expswgbjx1u","jwt":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJicm93c2Vyc3RhY2tfb2IiLCJzdWIiOiI0MzQwMTc0IiwiZ3JvdXBfaWQiOjQyODg1NjAsInVzZXJfaWQiOjQzNDAxNzQsImJ1aWxkX2hhc2hlZF9pZCI6IjNnZ3k1ZHZkMmJmeWV2Y3FtZnFtaHBvdG53eGczZXhwc3dnYmp4MXUiLCJwcm9qZWN0X25hbWUiOiJBdXRvbWF0ZWQgdGVzdCBBUFAgRXNjb2xhIEViYWMiLCJob29rX2FzX3Rlc3QiOiIxIiwiaWF0IjoxNzA2MjE4MjIzLCJleHAiOjE3MDY1NjM4MjN9.P3WKApeLJWMqx4p4SDidOsnLAo6IVxgchNN60d-_n7g","allow_screenshots":true}
-2024-01-25T21:30:22.938Z DEBUG @wdio/browserstack-service Executing observability cleanup
-2024-01-25T21:30:23.592Z DEBUG @wdio/browserstack-service [STOP_BUILD] Success response: ""
-2024-01-25T21:30:23.592Z INFO @wdio/browserstack-service 
-Visit https://observability.browserstack.com/builds/3ggy5dvd2bfyevcqmfqmhpotnwxg3expswgbjx1u to view build report, insights, and many more debugging information all at one place!
+[90m2024-01-25T23:49:33.284Z[39m [96mINFO[39m [97m@wdio/browserstack-service[39m Using app: bs://aa7081fa45e0042c57cc0aa94eee9d0888bdf086
+[90m2024-01-25T23:49:33.285Z[39m [33mWARN[39m [97m@wdio/browserstack-service[39m Skipping buildIdentifier as buildName is not passed.
+[90m2024-01-25T23:49:33.286Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m Sending launch start event
+[90m2024-01-25T23:49:34.178Z[39m [32mDEBUG[39m [97m@wdio/browserstack-service[39m [Start_Build] Success response: {"build_hashed_id":"xs1e9jq2hnxnardct0npbzrxxtc111mbgkmpdtbr","jwt":"eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJicm93c2Vyc3RhY2tfb2IiLCJzdWIiOiI0MzQwMTc0IiwiZ3JvdXBfaWQiOjQyODg1NjAsInVzZXJfaWQiOjQzNDAxNzQsImJ1aWxkX2hhc2hlZF9pZCI6InhzMWU5anEyaG54bmFyZGN0MG5wYnpyeHh0YzExMW1iZ2ttcGR0YnIiLCJwcm9qZWN0X25hbWUiOiJBdXRvbWF0ZWQgdGVzdCBBUFAgRXNjb2xhIEViYWMiLCJob29rX2FzX3Rlc3QiOiIxIiwiaWF0IjoxNzA2MjI2NTcxLCJleHAiOjE3MDY1NzIxNzF9.wlfWXS7nTBjuzw-k9ByEqx_qi1NNQTBwnXGODVzN414","allow_screenshots":true}
+2024-01-25T23:49:39.792Z DEBUG @wdio/browserstack-service Executing observability cleanup
+2024-01-25T23:49:40.418Z DEBUG @wdio/browserstack-service [STOP_BUILD] Success response: ""
+2024-01-25T23:49:40.419Z INFO @wdio/browserstack-service 
+Visit https://observability.browserstack.com/builds/xs1e9jq2hnxnardct0npbzrxxtc111mbgkmpdtbr to view build report, insights, and many more debugging information all at one place!
 
