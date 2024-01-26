@@ -2,7 +2,7 @@ const { config } = require('../../../wdio.shared.conf')
 
 // Definitions for test execution
 const appUrl = 'bs://aa7081fa45e0042c57cc0aa94eee9d0888bdf086' 
-const releaseName = 'Teste de automação mobile' // Example: version
+const releaseName = 'Testes Android' // Example: Release 1.1.1 - Hotfix 1
 const buildNumber = '123'
 
 // Settings of the device to be tested
@@ -18,13 +18,13 @@ config.services = [
     'browserstack',
     {
       app: process.env.BROWSERSTACK_APP_ID || appUrl,
-      buildIdentifier: '${BUILD_NUMBER}',
+      // buildIdentifier: '${BUILD_NUMBER}',
       browserstackLocal: true,
       testObservability: true,
       testObservabilityOptions: {
         'projectName': 'Automated test APP Escola Ebac',
-        'buildName': `Automated test execution in: ${releaseName}`,
-        'buildTag': `Bitrise Build Number: ${buildNumber}`
+        'buildName': `Automated test execution in production: ${releaseName}`,
+        'buildTag': `Build Number APP: ${buildNumber}`
       },
     },
   ]
