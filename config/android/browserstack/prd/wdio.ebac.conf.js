@@ -2,8 +2,8 @@ const { config } = require('../../../wdio.shared.conf')
 
 // Definitions for test execution
 const appUrl = 'bs://aa7081fa45e0042c57cc0aa94eee9d0888bdf086' 
-const releaseName = 'Testes Android' // Example: Release 1.1.1 - Hotfix 1
-const buildNumber = '123'
+const releaseName = 'Release 1.1.1' // Example: Release 1.1.1 - Hotfix 1
+const buildNumber = '00123456'
 
 // Settings of the device to be tested
 const deviceName = 'Samsung Galaxy S10e' 
@@ -18,7 +18,7 @@ config.services = [
     'browserstack',
     {
       app: process.env.BROWSERSTACK_APP_ID || appUrl,
-      // buildIdentifier: '${BUILD_NUMBER}',
+      buildIdentifier: "${BUILD_NUMBER}",
       browserstackLocal: true,
       testObservability: true,
       testObservabilityOptions: {
