@@ -39,5 +39,13 @@
   "license": "ISC",
   "dependencies": {
     "@wdio/cli": "^8.29.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuintilianoNery/Exercicios_Ebac_Mobile_Novo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/QuintilianoNery/Exercicios_Ebac_Mobile_Novo/issues"
+  },
+  "homepage": "https://github.com/QuintilianoNery/Exercicios_Ebac_Mobile_Novo#readme"
 }
