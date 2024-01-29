@@ -1,7 +1,7 @@
 const { config } = require('../../../wdio.shared.conf')
 
 // Definitions for test execution
-const appUrl = 'bs://aa7081fa45e0042c57cc0aa94eee9d0888bdf086' 
+const appUrl = 'bs://d3e839b6c0b52383a174b764a189cb1389fcf74f' 
 const releaseName = 'Release 1.1.1' // Example: Release 1.1.1 - Hotfix 1
 const buildNumber = '00123456'
 
@@ -18,7 +18,7 @@ config.services = [
     'browserstack',
     {
       app: process.env.BROWSERSTACK_APP_ID || appUrl,
-      buildIdentifier: "${BUILD_NUMBER}",
+      // buildIdentifier: "${BUILD_NUMBER}",
       browserstackLocal: true,
       testObservability: true,
       testObservabilityOptions: {
