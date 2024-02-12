@@ -1,7 +1,14 @@
 exports.elementsAndroid = {
     ebac: {
+        home: {
+            btnCriateNewStore:'android=new UiSelector().resourceIdMatches(".*:id/button_get_started")',
+            btnLoginStore:'android=new UiSelector().resourceIdMatches(".*:id/button_login_store")'
+        },
+        login:{
+            btnContinue:'android=new UiSelector().resourceIdMatches(".*:id/bottom_button")',
+            inputWebsiteAddress:'android=new UiSelector().resourceIdMatches(".*:id/input")',
+        }
 
-        
         // // Elements > Onboarding > Button
         // btnBack: 'android=new UiSelector().resourceIdMatches(".*:id/button_back")',
         // btnSkip: 'android=new UiSelector().resourceIdMatches(".*:id/button_skip")',
@@ -63,7 +70,7 @@ exports.elementsAndroid = {
 
         // // Elements > Home > Menu > List > My Digital Services
         // baseMyDigitalServices: 'android=new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text("Meus Serviços Digitais").resourceIdMatches(".*:id/groupLabel"))',
-        
+
         // baseOffersForCustomers: 'android=new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text("Ofertas para Clientes").resourceIdMatches(".*:id/menuLabel"))',
 
         // // Elements > Home > Menu > List > My Financial

@@ -1,5 +1,6 @@
 exports.fixtureProductionAndroid = {
     ebac: {
+        websiteAddress: 'http://lojaebac.ebaconline.art.br/',
         login: {
             valid: {
                 user: 'lojaebacqe@gmail.com',
