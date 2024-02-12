@@ -1,5 +1,7 @@
 const { loadElements, loadFixtures, loadAssertions } = require("../../functions/loadFunctions.js");
 const { checkElementAndVisibleText } = require("../../functions/common.js");
+const {expect} = require('@wdio/globals');
+
 
 // Global variables
 const element = loadElements()
