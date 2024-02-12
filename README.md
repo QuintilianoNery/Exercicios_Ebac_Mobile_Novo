@@ -144,3 +144,14 @@ adb devices -l
   "noReset": true
 }
 ```
+
+
+### Executar o teste de login localmente
+```
+npm run local:test
+```
+
+### Executar o teste de login no saucelabs
+```
+npm run web:test
+```

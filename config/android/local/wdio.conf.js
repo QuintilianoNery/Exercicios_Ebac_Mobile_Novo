@@ -11,12 +11,14 @@ exports.config = {
     baseUrl: 'http://localhost',
     port: 4723,
     path: '/wd/hub',
-    specs: ['./tests/specs/android/**.spec.js'],
+    specs: ['../../../tests/specs/android/**.spec.js'],
     framework: 'mocha',
     waitforTimeout: 5000,
     maxInstances: 10,
     reporters: ['spec'],
     capabilities: [
+
+        
         {
             "appium:deviceName": "samsung-galaxy-s20",
             "appium:platformName": "Android",

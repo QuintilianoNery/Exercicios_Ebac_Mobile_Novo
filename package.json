@@ -5,9 +5,8 @@
   "author": "Quintiliano Nery",
   "scripts": {
     "get:apps": "node tests/functions/getApps.js",
-    "test": "wdio run ./wdio.conf.js -- --spec tests/specs/android/login.spec.js",
-    "bs:test": "wdio run ./config/android/browserstack/prd/wdio.ebac.conf.js --spec tests/specs/android/login.spec.js",
-    "bs:test:local": "wdio run ./config/android/browserstack/local/wdio.conf.js -- --spec tests/specs/android/login.spec.js"
+    "local:test": "wdio run ./config/android/local/wdio.conf.js -- --spec tests/specs/android/login.spec.js",
+    "web:test": "wdio run ./config/android/local/sourceServe.conf.js -- --spec tests/specs/android/login.spec.js"
   },
   "keywords": [
     "webdriverio",
@@ -21,6 +20,7 @@
     "@wdio/cli": "^8.3.9",
     "@wdio/local-runner": "^8.31.1",
     "@wdio/mocha-framework": "^8.31.1",
+    "@wdio/sauce-service": "^8.31.1",
     "@wdio/spec-reporter": "^8.31.1",
     "appium": "^2.0.0-beta.55",
     "appium-uiautomator2-driver": "^2.45.1",

@@ -4,8 +4,13 @@ exports.assertionProductionAndroid = {
             btnLoginStore: 'Fazer login'
         },
         login: {
-            websiteAddress: 'Endereço do site'
-        }
+            websiteAddress: 'Endereço do site',
+            emailAddress:'Endereço de e-mail',
+            password:'Senha',
+        },
+        myStoreHomePage:{
+            subTitleMyStoreHomePage:'EBAC - Shop'
+        }}}
 
 
 
@@ -60,5 +65,3 @@ exports.assertionProductionAndroid = {
         // profile: {
         //     consultantLevel: 'Nível atual:'
         // }
-    }
-}

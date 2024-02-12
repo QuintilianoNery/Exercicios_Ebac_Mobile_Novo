@@ -1,16 +1,14 @@
 const { config } = require('../../../wdio.shared.conf')
 
 // Definitions for test execution
-const appUrl = 'bs://d3e839b6c0b52383a174b764a189cb1389fcf74f'
-const releaseName = 'Release 1.1.1' // Example: Release 1.1.1 - Hotfix 1
-const buildNumber = '00123456'
-
-// Settings of the device to be tested
+const appUrl = 'bs://b34f689c74e1c8c038ff7ce6811e2fe31ac6fe48' // APP URL
+const releaseName = 'Testes automatizados EBAC' // Example: Release 1.1.1
+const buildNumber = '1234' // buildNumber app
 const deviceName = 'Samsung Galaxy S10e'
 const deviceVersion = '9.0'
 
 config.specs = [
-  '../../../../tests/specs/android/**.js',
+  '../../../../tests/specs/android/**.spec.js',
 ]
 
 config.services = [
@@ -18,43 +16,34 @@ config.services = [
     'browserstack',
     {
       app: process.env.BROWSERSTACK_APP_ID || appUrl,
-      //  buildIdentifier: "${BUILD_NUMBER}",
+      buildIdentifier: '#${BUILD_NUMBER}',
       browserstackLocal: true,
-
       testObservability: true,
       testObservabilityOptions: {
-        'projectName': 'Automated test APP Escola Ebac',
-        'buildName': `Automated test execution in production: ${releaseName}`,
-        'buildTag': `Build Number APP: ${buildNumber}`
+        'projectName': 'Automação de testes estudo EBAC - APP WooComerce',
+        'buildName':'Automated test : 123abc',
+        'buildTag': `Build Number: ${buildNumber}`
       },
     },
   ]
 ]
 
-config.capabilities = [
-  {
-    deviceName: "samsung-galaxy-s20",
-    platformName: "Android",
-    platformVersion: "13",
-    automationName: "UiAutomator2",
-    app: join(process.cwd(), './app/android/wdioNative.apk'),
-    appPackage: "com.wdiodemoapp",
-    appActivity: ".SplashActivity",
-    appWaitActivity: ".MainActivity",
-    udid: "RX8N305B2CK",
-    noReset: "true",
-    autoGrantPermissions: true,
-    interactiveDebugging: true,
-    fullReset: true,
-    language: 'pt',
-    locale: 'BR'
-  }
-]
-
+config.capabilities = [{
+  build: process.env.BROWSERSTACK_BUILD_NAME,
+  projectName: 'Automação de testes estudo EBAC - APP WooComerce',
+  name: 'UIAutomator2',
+  deviceName: deviceName,
+  platformVersion: deviceVersion,
+  platformName: 'android',
+  autoGrantPermissions: true,
+  fullReset: true,
+  language: 'pt',
+  locale: 'BR'
+}]
 config.maxInstances = 1
 
 config.platform = 'android'
-config.application = 'ebac'
+config.application = 'NATURABR'
 config.environment = 'production'
 
 exports.config = config;
