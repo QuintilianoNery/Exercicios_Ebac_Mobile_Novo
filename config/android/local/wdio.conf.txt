@@ -1,0 +1,40 @@
+const { join } = require('path')
+
+exports.config = {
+    hostname: 'localhost',
+    baseUrl: 'http://localhost',
+    port: 4723,
+    path: '/wd/hub',
+    specs: ['../../../tests/specs/android/**.js'],
+    framework: 'mocha',
+    waitforTimeout: 5000,
+    maxInstances: 10,
+    reporters: ['spec'],
+    capabilities: [
+        {
+            deviceName: "samsung-galaxy-s20",
+            platformName: "Android",
+            platformVersion: "13",
+            automationName: "UiAutomator2",
+            app: join(process.cwd(), './app/android/wdioNative.apk'),
+            appPackage: "com.wdiodemoapp",
+            appActivity: ".SplashActivity",
+            appWaitActivity: ".MainActivity",
+            udid: "RX8N305B2CK",
+            noReset: "true",
+        }
+    ],
+    before: function () {
+        return {
+            shortCircuit: true,
+        };
+    },
+}
+
+config.platform = 'android'
+config.application = 'ebac'
+config.environment = 'production'
+exports.config = config;
+
+config.services = ['appium']
+

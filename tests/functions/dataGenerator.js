@@ -5,4 +5,4 @@ const { faker } = require ("@faker-js/faker");
 // Global variables
 const element = loadElements()
 const fixture = loadFixtures()
-const application = config.application
+const application = 'ebac'

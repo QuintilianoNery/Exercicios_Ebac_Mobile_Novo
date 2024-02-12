@@ -31,19 +31,25 @@ config.services = [
   ]
 ]
 
-config.capabilities = [{
-  build: process.env.BROWSERSTACK_BUILD_NAME,
-  projectName: 'Automated test APP Escola Ebac',
-  name: 'UIAutomator2',
-  deviceName: 'Samsung Galaxy S10e',
-  platformVersionplatformVersion: '9.0',
-  platformName: 'android',
-  autoGrantPermissions: true,
-  interactiveDebugging: true,
-  fullReset: true,
-  language: 'pt',
-  locale: 'BR'
-}]
+config.capabilities = [
+  {
+    deviceName: "samsung-galaxy-s20",
+    platformName: "Android",
+    platformVersion: "13",
+    automationName: "UiAutomator2",
+    app: join(process.cwd(), './app/android/wdioNative.apk'),
+    appPackage: "com.wdiodemoapp",
+    appActivity: ".SplashActivity",
+    appWaitActivity: ".MainActivity",
+    udid: "RX8N305B2CK",
+    noReset: "true",
+    autoGrantPermissions: true,
+    interactiveDebugging: true,
+    fullReset: true,
+    language: 'pt',
+    locale: 'BR'
+  }
+]
 
 config.maxInstances = 1
 

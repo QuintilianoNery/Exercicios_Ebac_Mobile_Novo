@@ -1,4 +1,4 @@
-const { config } = require("../../config/wdio.shared.conf")
+// const { config } = require("../../wdio.conf.js")
 const { elementsAndroid } = require("../components/android/elements.js")
 const { elementsIos } = require("../components/ios/elements.js")
 const { fixtureStagingAndroid } = require("../fixtures/android/data/fixture.staging.js")
@@ -11,9 +11,9 @@ const { assertionStagingIos } = require("../fixtures/ios/assertions/assertions.s
 const { assertionProductionIos } = require("../fixtures/ios/assertions/assertions.production.js")
 
 // Global variables
-const platform = config.platform
-const application = config.application
-const environment = config.environment
+const platform = 'android'
+const application = 'ebac'
+const environment = 'production'
 let element, fixture, assertion;
 
 exports.loadElements = () => {
